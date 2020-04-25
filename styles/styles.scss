@@ -54,7 +54,7 @@ main {
 
     p {
         padding-top: 1em;
-        color: $GrayishBlue;
+        // color: $GrayishBlue;
     }
 }
 h2,
@@ -131,6 +131,12 @@ h3 {
         grid-template-rows: repeat(4, auto);
         grid-template-areas: "1 2 3";
         grid-column-gap: 2em;
+    }
+    .header {
+        p {
+            color: red($color: #000000);
+            width: 50%;
+        }
     }
     .cards {
         h3 {
