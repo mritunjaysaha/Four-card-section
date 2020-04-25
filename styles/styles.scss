@@ -1,0 +1,95 @@
+// PRIMARY
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+// NEUTRAL
+$VeryDarkBlue: hsl(234, 12%, 34%);
+$GrayishBlue: hsl(229, 6%, 66%);
+$VeryLightGray: hsl(0, 0%, 98%);
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    background: $VeryLightGray;
+}
+
+main {
+    margin: 0 5%;
+}
+
+// Heading
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+.header {
+    padding: 4em 0;
+    text-align: center;
+
+    p {
+        padding-top: 1em;
+        color: $GrayishBlue;
+    }
+}
+
+// cards
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    -webkit-box-shadow: 2px 13px 32px 1px rgba(163, 165, 174, 0.5);
+    -moz-box-shadow: 2px 13px 32px 1px rgba(163, 165, 174, 0.5);
+    box-shadow: 2px 13px 32px 1px rgba(163, 165, 174, 0.5);
+
+    border-radius: 5px;
+    padding: 1em;
+    margin-bottom: 2em;
+    height: 35vh;
+
+    h4 {
+        font-weight: 600;
+    }
+    p {
+        color: $GrayishBlue;
+        font-weight: 400;
+    }
+}
+
+.red {
+    border-top: 3px solid $red;
+}
+.cyan {
+    border-top: 3px solid $cyan;
+}
+.orange {
+    border-top: 3px solid $orange;
+}
+.blue {
+    border-top: 3px solid $blue;
+}
